@@ -1,0 +1,11 @@
+.titlebar{
+    background-color: #cacfd3!important;
+    height:50px;
+    line-height: 50px;
+    border-radius:0px!important;
+    box-shadow:none!important;
+}
+
+.custom-tag{
+    cursor: pointer;
+}

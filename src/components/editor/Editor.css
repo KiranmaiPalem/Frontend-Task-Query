@@ -1,0 +1,33 @@
+.editor{
+    background-color:rgb(226, 226, 172)!important;
+    height:90vh;
+    border-radius:0px!important;
+    box-shadow:none!important;
+}
+.dateText{
+color: #aca1a1;
+margin:0px!important;
+text-align: center;
+}
+.custom-textarea{
+    background-color:rgb(226, 226, 172)!important;
+    border:none!important;
+    margin:50px;
+    width:80%;
+    height:70vh;
+    border-radius:0px!important;
+    box-shadow:none!important;
+    color:black;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serifH;
+}
+
+.custom-textarea:focus{
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+}
