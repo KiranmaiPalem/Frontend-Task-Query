@@ -8,9 +8,13 @@ function NoteList() {
         minute: "2-digit",
         hour12 : true
      }
+     function showData(e) {
+      e.preventDefault();
+      console.log('The link was clicked.');
+    }
   return (
     <React.Fragment>
-        <Paper>
+        <Paper onClick={showData()}>
         <p>Hello! Welcome!!?</p>
         <p>{new Date().toLocaleTimeString("en-us", options)}</p>
         </Paper>
