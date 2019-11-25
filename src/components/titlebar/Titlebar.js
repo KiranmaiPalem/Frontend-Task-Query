@@ -4,7 +4,9 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import CreateIcon from '@material-ui/icons/Create';
 import UpdateIcon from '@material-ui/icons/Update';
 import SaveIcon from '@material-ui/icons/Save';
+import AddCommentIcon from '@material-ui/icons/AddComment';
 import Tooltip from '@material-ui/core/Tooltip';
+import HttpService from '../services/httpServices';
 import './Titlebar.css';
 
 class Titlebar extends React.Component {
@@ -15,7 +17,7 @@ class Titlebar extends React.Component {
     }
 
     deleteNote =()=>{
-        console.log("Deleted");
+       HttpService.deleteNote()
     }
 
     updateNote =()=>{
@@ -43,6 +45,9 @@ class Titlebar extends React.Component {
             </Tooltip>
             <Tooltip title="Save Note!">
                 <SaveIcon className="custom-tag" onClick={this.saveNote.bind(this)} />
+            </Tooltip>
+            <Tooltip title="Add tag!">
+                <AddCommentIcon className="custom-tag" onClick={this.saveNote.bind(this)} />
             </Tooltip>
             <Tooltip title="Delete Note!">
                 <DeleteIcon className="custom-tag" onClick={this.deleteNote.bind(this)} />

@@ -23,7 +23,7 @@ class Editor extends React.Component {
     <React.Fragment>
       <Paper className="editor">
           <p className="dateText">{this.state.date}</p>
-          <textarea className="custom-textarea" autofocus="autofocus"/>
+          <textarea className="custom-textarea" autoFocus="autofocus"/>
       </Paper>
     </React.Fragment>
   );}

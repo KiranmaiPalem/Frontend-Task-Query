@@ -1,9 +1,24 @@
 {
-    "notes":[
-        {
-            "text":"hello",
-            "time":"13/11/2019",
-            "tags":"No tags"
-        }
-    ]
+  "notes": [
+    {
+      "text": "hello",
+      "time": "13/11/2019",
+      "tags": "No tags"
+    },
+    {
+      "text": "hello",
+      "time": "13/11/2019",
+      "tags": "No tags"
+    },
+    {
+      "text": "hello",
+      "time": "13/11/2019",
+      "tags": "No tags"
+    },
+    {
+      "text": "hello",
+      "time": "13/11/2019",
+      "tags": "No tags"
+    }
+  ]
 }

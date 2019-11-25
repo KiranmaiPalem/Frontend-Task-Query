@@ -3,7 +3,8 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import initialReducer from './reducers/initialReducer'
-import App from './components/App'
+import * as serviceWorker from './serviceWorker'
+import App from './App'
 
 const store = createStore(initialReducer)
 
