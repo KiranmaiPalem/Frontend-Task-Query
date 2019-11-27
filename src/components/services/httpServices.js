@@ -18,34 +18,20 @@ static getApi(url){
  
 static deleteNote()
 {
-    fetch((baseUrl), {
-        method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json',
-        }
-      })
-        .then(resp => resp.json())
-    
+  fetch(baseUrl + "/1", {
+    method: 'DELETE'
+  }).then(() => {
+     console.log('removed');
+  }).catch(err => {
+    console.error(err)
+  })
 }
 
 static createNote()
 {
-    fetch(baseUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      name: `${event.target.name.value}`,
-      image: `${event.target.image.value}`,
-      likes: 0
-    })
-  })
-    .then(resp => resp.json())
 }
     
 }
 
-}
  
 export default HttpService
